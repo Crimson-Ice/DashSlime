@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ViseurMovement : MonoBehaviour
 {
     public GameObject ancre;
-    public float angle;
+    private float angle;
     // Update is called once per frame
     void Update()
     {

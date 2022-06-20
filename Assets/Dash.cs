@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Dash : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Vector2 mousePos = new Vector2(0,0);
-    public Vector3 Direction;
+    private Vector3 Direction;
     public GameObject MaskViseur;
     public GameObject Viseur;
 
-    public ViseurMovement viseurMovement;
+    public Hero_Stat hero_Stat;
     private bool CanDash = true;
+
     void Update()
     {
+
         //si on clique et que on peut dash
         if (Input.GetMouseButtonDown(0) && CanDash == true)
         {
@@ -32,12 +32,12 @@ public class Dash : MonoBehaviour
     /// <summary>
     /// Dit si le joueur peut dash ou non et bouge le mask du viseur
     /// </summary>
-    bool CanDashFonction()
+    private bool CanDashFonction()
     {
         //direction dans laquel le mask bouge
         Vector3 dirMask = MaskViseur.transform.position - transform.position;
         //fait bouger le mask (a une certaine vitesse)
-        MaskViseur.transform.position += (dirMask)/3.5f * Time.deltaTime;
+        MaskViseur.transform.position += (dirMask)/hero_Stat.Dash_speed * Time.deltaTime; //pensé a faire une fonction inverse avec la vitesse de dash
         //verifie la distance entre le mask du viseur et le joueur
         float dis = Vector3.Distance(MaskViseur.transform.position, transform.position);
         
@@ -51,7 +51,7 @@ public class Dash : MonoBehaviour
     /// <summary>
     /// fait Dash le joueur
     /// </summary>
-    void DashMovement()
+    private void DashMovement()
     {
         //position de la souris
         mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
