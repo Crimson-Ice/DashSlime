@@ -29,6 +29,6 @@ public class Vague_ManagerScript : MonoBehaviour
     }
     void Update()
     {
-        //si pu d'ennmie viviant sur le terrain refaire spawn une vague et numero_vague ++ (Ennemie_List vide)
+        //si pu d'ennemis vivant sur le terrain refaire spawn une vague et numero_vague ++ (Ennemie_List vide)
     }
 }
