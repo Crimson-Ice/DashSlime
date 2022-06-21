@@ -42,7 +42,7 @@ public class Dash : MonoBehaviour
         float dis = Vector3.Distance(MaskViseur.transform.position, transform.position);
         
         //si la distance est supérieur a 2.30 alors le joueur peut reDash et donc le viseur est en mode pret
-        if(dis >= 2.15f)
+        if(dis >= 2.55f)
             return true;
         else
             return false;

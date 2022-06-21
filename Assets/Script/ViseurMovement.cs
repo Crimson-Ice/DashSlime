@@ -3,7 +3,7 @@ using UnityEngine;
 public class ViseurMovement : MonoBehaviour
 {
     public GameObject ancre;
-    private float angle;
+    public float angle;
     // Update is called once per frame
     void Update()
     {
