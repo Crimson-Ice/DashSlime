@@ -45,7 +45,7 @@ public class Vague_ManagerScript : MonoBehaviour
     {
         for (int i = 0; i < nb; i++)
         {
-            list_point.RemoveAt(Random.Range(0, list_point.Count));
+            list_point.RemoveAt(Random.Range(0, list_point.Count));   
         }
 
         return list_point;
