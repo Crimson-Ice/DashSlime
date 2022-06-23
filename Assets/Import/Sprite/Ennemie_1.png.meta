@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e185f7da05014a94a9279d0b43899006
+guid: 5b08625b96f4c9049a0b7e5a46e331ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hero Sprite-Sheet-Sheet_0
+      name: Ennemie_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 11
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f77123bb76f010b4a8f9dba86b5ecc41
-      internalID: 1598046720
+      spriteID: e2de789a6a68569409e58572f07e01ef
+      internalID: 323482415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero Sprite-Sheet-Sheet_1
+      name: Ennemie_1_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 11
         y: 0
-        width: 16
-        height: 11
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 057b2b93be69be6439e9d40c6c48445b
-      internalID: 776564111
+      spriteID: 24e3f05429151114ea09633c7a13e519
+      internalID: -1645284503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero Sprite-Sheet-Sheet_2
+      name: Ennemie_1_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 22
         y: 0
-        width: 16
-        height: 11
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ea839bcaf80c854bad6e375c2c44c41
-      internalID: -1278143145
+      spriteID: 28b481d07f096dc40b83ef9bfaa50d98
+      internalID: 22243658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero Sprite-Sheet-Sheet_3
+      name: Ennemie_1_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 33
         y: 0
-        width: 16
-        height: 11
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,29 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4406a7d5b1f80be448437b0b5ecd6824
-      internalID: -1521583110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hero Sprite-Sheet-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42fe0b82a979caa47904dcd2f2bfe621
-      internalID: -917339324
+      spriteID: 6447889be74bdd344baeb938937be134
+      internalID: -1148128883
       vertices: []
       indices: 
       edges: []
@@ -219,11 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hero Sprite-Sheet-Sheet_0: 1598046720
-      Hero Sprite-Sheet-Sheet_3: -1521583110
-      Hero Sprite-Sheet-Sheet_4: -917339324
-      Hero Sprite-Sheet-Sheet_1: 776564111
-      Hero Sprite-Sheet-Sheet_2: -1278143145
+      Ennemie_1_3: -1148128883
+      Ennemie_1_1: -1645284503
+      Ennemie_1_0: 323482415
+      Ennemie_1_2: 22243658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

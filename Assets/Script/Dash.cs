@@ -10,6 +10,7 @@ public class Dash : MonoBehaviour
 
     public Hero_Stat hero_Stat;
     private bool CanDash = true;
+    private float MovementCooldown;
 
     void Update()
     {
@@ -20,12 +21,25 @@ public class Dash : MonoBehaviour
             DashMovement();
             MaskViseur.transform.position = Viseur.transform.position;
             CanDash = false;
+            MovementCooldown = 0.5f;
         }
 
         //si on ne peut pas dash
         if(CanDash == false)
         {   
-            CanDash = CanDashFonction();
+            if(MovementCooldown <= 0f)
+            {
+                rb.velocity = new Vector2(0,0);
+                CanDash = CanDashFonction();
+
+                transform.GetChild(0).gameObject.SetActive(true);
+            }
+            else
+            {
+                MovementCooldown -= Time.deltaTime;
+
+                transform.GetChild(0).gameObject.SetActive(false);
+            }
         }
     }
 
@@ -37,7 +51,7 @@ public class Dash : MonoBehaviour
         //direction dans laquel le mask bouge
         Vector3 dirMask = MaskViseur.transform.position - transform.position;
         //fait bouger le mask (a une certaine vitesse)
-        MaskViseur.transform.position += (dirMask)/hero_Stat.Dash_speed * Time.deltaTime; //pensé a faire une fonction inverse avec la vitesse de dash
+        MaskViseur.transform.position += ((dirMask)/(2.5f/hero_Stat.Dash_speed)) * Time.deltaTime;
         //verifie la distance entre le mask du viseur et le joueur
         float dis = Vector3.Distance(MaskViseur.transform.position, transform.position);
         
@@ -60,6 +74,8 @@ public class Dash : MonoBehaviour
         //continue après la souris (le dash)
         Direction = Direction.normalized;
         //fait bouger le joueur
-        rb.MovePosition(transform.position + (Direction * 10));
+
+        rb.velocity = Direction * 15;
+        //rb.MovePosition(transform.position + (Direction * 10));
     }
 }
